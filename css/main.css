@@ -109,6 +109,17 @@ header{
 .categories .box{
     width: 100%;
     height: 400px;
+    overflow: hidden;
+    transition: 1s;
+    cursor: pointer;
+}
+.categories .box img:hover{
+    transition: 2s;
+    transform: scale(1.1) !important;
+}
+
+.categories .box img{
+    transition: 0.5s;
 }
 
 .categories img, .featured img{
@@ -116,6 +127,7 @@ header{
     height: 100%;
     object-fit: cover;
 }
+
 
 .categories .inside-text{
     display: grid;
@@ -222,6 +234,8 @@ footer h5:hover{
     .categories .box{
         height: 350px;
     }
+    
+
     .featured{
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     }
